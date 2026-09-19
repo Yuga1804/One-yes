@@ -10,11 +10,11 @@ import requests
 # ---------------------------------------------------------------------------
 # Credentials and settings (loaded from environment/secrets with fallbacks)
 # ---------------------------------------------------------------------------
-GMAIL_ADDRESS = os.environ.get("GMAIL_ADDRESS", "thahrinah05@gmail.com")
-GMAIL_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD", "cwjp dkou chbq vlqj")
-RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL", "yugadharshini18@gmail.com")
-OPENWEATHER_API_KEY = os.environ.get("OPENWEATHER_API_KEY", "my_openweather_api_key")  # Put your OpenWeather API key here if you have one
-ZAPIER_WEBHOOK_URL = os.environ.get("ZAPIER_WEBHOOK_URL", "my_existing_zapier_webhook_url")  # Put your Zapier Catch Hook URL here if you have one
+GMAIL_ADDRESS = os.environ.get("GMAIL_ADDRESS") or "thahrinah05@gmail.com"
+GMAIL_APP_PASSWORD = os.environ.get("GMAIL_APP_PASSWORD") or "cwjp dkou chbq vlqj"
+RECIPIENT_EMAIL = os.environ.get("RECIPIENT_EMAIL") or "yugadharshini18@gmail.com"
+OPENWEATHER_API_KEY = os.environ.get("OPENWEATHER_API_KEY") or "my_openweather_api_key"  # Put your OpenWeather API key here if you have one
+ZAPIER_WEBHOOK_URL = os.environ.get("ZAPIER_WEBHOOK_URL") or "my_existing_zapier_webhook_url"  # Put your Zapier Catch Hook URL here if you have one
 
 SMTP_SERVER = "smtp.gmail.com"
 SMTP_PORT = 587
